@@ -1,0 +1,17 @@
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+        color: salmon;
+        }
+    52%{
+        transform: rotate(360deg);
+        background: salmon;
+        opacity: 0.8;
+        
+        }
+}
+
+.elementToAnimate{
+    animation: yourAnimation 24s infinite 3s cubic-bezier(1, -1.19, 0.24, 4.04);
+}
