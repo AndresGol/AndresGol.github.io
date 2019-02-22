@@ -55,7 +55,7 @@
     animation: animate 3s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Gorditas', cursive;
     }
 
     @keyframes animate {
