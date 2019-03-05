@@ -158,7 +158,6 @@ img {
 
 .content {
 	background-image: linear-gradient(to left, #024baa 0%, #fff 24%, #fff 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
-
 	text-align: center;
 	position: relative;
 	z-index: 100;
@@ -246,7 +245,7 @@ img {
 	line-height: 1;
 	font-weight: normal;
 	margin: 0 1rem;
-	font-family: kon-tiki-aloha-jf, sans-serif;
+	font-family: "europa", Futura, Arial, sans-serif; 
 }
 
 .info {
@@ -337,11 +336,11 @@ img {
 
 
 
-.content__tagline {
+  .content__tagline {
     color: #ffffff;
     /* margin: 0 0 0 0; */
-	margin-top: 1rem;
-	/* background-color: rgba(0, 1, 7, 0.5); */
+    margin-top: 1rem;
+    /* background-color: rgba(0, 1, 7, 0.5); */
     margin-right: 0px;
     margin-top: 0rem;
     /* margin-right: 0px; */
@@ -353,10 +352,9 @@ img {
     text-transform: lowercase;
     /* text-align: left; */
     z-index: 199;
-    margin-right: 60em;
+    margin-right: 45%;
     font-family: "europa", Futura, Arial, sans-serif;
 }
-
 .action {
 	background: none;
 	border: 0;
@@ -567,10 +565,161 @@ svg:not(:root) {
 
 /* media query */
 
+@media screen and (max-width: 847px) {
+
+
+	.content {
+/* 
+		background-image: linear-gradient(to left
+		 #024baa 0%, rgb(197, 16, 16) 24%, rgb(235, 15, 15) 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #d123ae 84%, #2c0fcf 100%)!important; */
+		text-align: center;
+		position: relative;
+		z-index: 100;
+		height: 100vh;
+	
+	}
+
+
+	.content__tagline {
+
+		color: #ffffff;
+		margin: 0 0 0 0;
+			margin-top: 0px;
+			margin-right: 0px;
+		margin-top: 1rem;
+		margin-right: 0px;
+		margin-top: 0rem;
+		margin-right: 0px;
+		margin-top: 1rem;
+		font-weight: 100;
+		font-size: 1.3rem;
+		letter-spacing: 0rem;
+		word-spacing: 0rem;
+		text-transform: lowercase;
+		z-index: 199;
+		margin-right: 0%;
+		font-family: "europa", Futura, Arial, sans-serif;
+	
+	}
+	.content__title {
+
+		font-family: kon-tiki-aloha-jf, sans-serif;
+		font-size: 13vw;
+		font-weight: normal;
+		mix-blend-mode: screen;
+		line-height: 0.8;
+		text-transform: lowercase;
+		margin: 0;
+		color: #a9fae2;
+		z-index: 199;
+	
+	}
+
+	
+	b {
+
+		font-size: 1rem;
+		padding-left: 2rem;
+		text-align: center;
+		max-width: 79%;
+		color: #fcfcfc;
+		font-family: "europa", Futura, Arial, sans-serif;
+		font-weight: 100;
+	
+	}
+
+	.frame  p {
+		display: none!important;
+		font-size: 1.3em;
+		display: block;
+		grid-area: info;
+		margin: 0rem 0rem;
+		justify-self: end;
+		text-align: center;
+		color: white;
+		font-family: "europa", Futura, Arial, sans-serif !important;
+	
+	}
+
+	.background {
+
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 397px;
+		left: 135px;
+		background-image: url(../img/1.jpg);
+		background-position: 90% 80%;
+		background-size: 37%;
+		z-index: 1;
+		background-repeat: no-repeat;
+	background-color: none;
+	
+	}
+
+	.background {
+
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 53px;
+		left: 0;
+		background-image: url(../img/1.jpg);
+		background-position: 90% 80%;
+		background-size: 37%;
+		z-index: 1;
+		background-repeat: no-repeat;
+		background-color: transparent;
+	
+	}
+	.github {
+		width: 55%;
+		display: block;
+		margin: 1rem 42px 35px 0px;
+	
+	}
+
+
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 53em) {
 	body {
 		padding: 0;
 	}
+
+
+
+
+
+
+	
 	.content {
 		position: relative;
 		display: flex;
@@ -581,6 +730,38 @@ svg:not(:root) {
 		min-height: 100vh;
 		text-align: left;
 	}
+	/* .content__tagline {
+
+		color: #dd0707;
+		margin: 0 0 0 0;
+		margin-top: 1rem;
+		background-color: rgba(0, 1, 7, 0.5);
+		margin-right: 0px;
+		margin-top: 0rem;
+		margin-right: 0px;
+		margin-top: 1rem;
+		font-weight: 100;
+		font-size: 1rem;
+		letter-spacing: 0rem;
+		word-spacing: 0rem;
+		text-transform: lowercase;
+		text-align: left;
+		z-index: 199;
+		margin-right: 26em;
+		font-family: "europa", Futura, Arial, sans-serif;
+	
+	} */
+
+
+
+
+
+
+
+
+
+
+
 	.frame {
 		position: fixed;
 		z-index: 199;
@@ -762,3 +943,5 @@ svg:not(:root) {
 		opacity: 1;
 	}
 }
+
+
