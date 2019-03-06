@@ -72,7 +72,7 @@ body {
 	-webkit-transition: 3s ease-in-out;
     -moz-transition: 3s ease-in-out;
     -o-transition: 3s ease-in-out;
-    animation: test 4s 6s 1 ease-in-out backwards
+    animation: test 4s 6s 1 ease-in-out 
 }
 
 @-webkit-keyframes test{
@@ -342,7 +342,7 @@ img {
 
 /* Header */
 .codrops-header {
-	width: 35%;
+	width: 20%;
 	position: relative;
 	z-index: 100;
 	display: flex;
