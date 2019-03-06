@@ -64,11 +64,35 @@ body {
 }
 
 .logo {
-	width: 80%;
-	opacity: 1;
+    width: 70%;
+    opacity: 1;
     margin-bottom: 0px;
     margin-top: 0px;
+	margin-left: 20px;
+	-webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
+    animation: test 6s 6s 1 ease-in-out backwards
 }
+
+@-webkit-keyframes test{
+	0%   { opacity: 1; transform: scale(1);}
+	100% { opacity: 0; transform: scale(30);}
+  }
+  @-moz-keyframes test {
+	0%   { opacity: 1; transform: scale(1);}
+	100% { opacity: 0; transform: scale(30);}
+  }
+  @-o-keyframes test{
+	0%   { opacity: 1; transform: scale(1);}
+	100% { opacity: 0; transform: scale(30);}
+  }
+  @keyframes test {
+	0%   { opacity: 0; transform: scale(1);}
+	1%   { opacity: 1; transform: scale(1);}
+	100% { opacity: 0; transform: scale(30);}
+  }
+
 
 
 
@@ -333,8 +357,8 @@ img {
 	margin-top: 10px;
     padding-left: 0rem;
     text-align: center;
-    max-width: 74%;
-	color: #5ad3f1;
+    max-width: 100%;
+	color: #ffffff;
 	font-family: "europa", Futura, Arial, sans-serif; 
 	font-weight: 100;
 	width: 200px;
@@ -396,7 +420,7 @@ img {
     line-height: 0.8;
     text-transform: lowercase;
     margin: 0;
-    color: #00ffb3;
+    color: #2c5a9d;
 	z-index: 199;
     margin-left: -12em;
 }
@@ -728,7 +752,7 @@ svg:not(:root) {
 		line-height: 0.8;
 		text-transform: lowercase;
 		margin: 0;
-		color: #00ffb3;
+		color: #2c5a9d;
 		z-index: 199;
 	
 	}
