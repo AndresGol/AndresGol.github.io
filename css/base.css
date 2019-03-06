@@ -414,6 +414,7 @@ img {
 
 
   .content__tagline {
+	  font-weight: 100;
     color: #ffffff;
     /* margin: 0 0 0 0; */
     margin-top: 1rem;
@@ -423,7 +424,7 @@ img {
     /* margin-right: 0px; */
     margin-top: 1rem;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.6rem;
     /* letter-spacing: 0rem; */
     /* word-spacing: 0rem; */
     text-transform: lowercase;
@@ -545,7 +546,8 @@ img {
 
 .sidemenu__item-inner {
 	display: block;
-	transform: translate3d(0,100%,0);
+	/* transform: translate3d(0,100%,0); */
+	
 }
 
 .menu__item-map {
@@ -575,14 +577,25 @@ img {
 	color: var(--color-link);
 }
 
+
 .quote {
-	font-size: 2rem;
-	padding: 1rem;
-	text-align: center;
-	max-width: 70%;
-	color: var(--color-quote);
-	font-family: "europa", Futura, Arial, sans-serif; 
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    max-width: 80%;
+    color: var(--color-quote);
+	font-family: "europa", Futura, Arial, sans-serif;
+	background-image: linear-gradient(#021830, #0c1218);
+	background-size: auto 200%;
+	background-position: 0 100%;
+	transition: background-position 0.5s;
 }
+
+.quote:hover {
+	background-position: 0 0;
+  }
+
+
 
 b {
     font-size: 1rem;
@@ -917,14 +930,16 @@ svg:not(:root) {
 		align-items: center;
 	}
 	.label {
+		font-weight: 100;
 		display: block;
 		color: var(--color-item-alt);
 		position: absolute;
 		z-index: 1000;
-		font-size: 0.85rem;
+		font-size: 1.2rem;
 		font-weight: bold;
 		margin: 0;
 		white-space: nowrap;
+		font-weight: 100;
 	}
 	.label--topleft {
 		top: 2rem;
@@ -943,7 +958,7 @@ svg:not(:root) {
 		right: 2rem;
 	}
 	.label::before {
-		content: '------------- ';
+		content: '>>';
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		letter-spacing: -1px;
