@@ -72,10 +72,10 @@ body {
 	-webkit-transition: 3s ease-in-out;
     -moz-transition: 3s ease-in-out;
     -o-transition: 3s ease-in-out;
-    animation: test 4s 6s 1 ease-in-out 
+    /* animation: test 4s 6s 1 ease-in-out  */
 }
 
-@-webkit-keyframes test{
+/* @-webkit-keyframes test{
 	0%   { opacity: 1; transform: scale(1);}
 	100% { opacity: 0; transform: scale(30);}
   }
@@ -91,7 +91,7 @@ body {
 	0%   { opacity: 1;transform: rotate(9220deg) ;}
 	500%   { opacity: 1;}
 	100%   { opacity: 1;}
-  }
+  } */
 
 
 
@@ -479,7 +479,7 @@ img {
     font-size: 1.6rem;
     /* letter-spacing: 0rem; */
     /* word-spacing: 0rem; */
-    text-transform: lowercase;
+    text-transform: capitalize;
     /* text-align: left; */
     z-index: 199;
     margin-right: 45%;
@@ -707,7 +707,151 @@ svg:not(:root) {
 
 /* media query */
 
+@media screen and (max-width: 425px) {
+
+	.action--menu {
+		pointer-events: auto;
+		position: absolute;
+		top: 1.5rem!important;
+		right: 0.5rem!important;
+		z-index: 1000;
+	}
+	.action--close {
+		position: absolute;
+		top: 0.9rem!important;
+		right: 1.6rem!important;
+		z-index: 1000;
+		opacity: 0;
+		padding: 32px 5px;
+	}
+
+	svg:not(:root) {
+		margin-top: 18px;
+		overflow: hidden;
+		margin-right: 20px;
+	}
+	.codrops-header {
+		margin-top: -72px;
+		width: 33%!important;
+		position: relative;
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+		align-self: start;
+	}
+	.content {
+		/* background-image: linear-gradient(to left, #024baa 0%, #fff 24%, #fff 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+		background: #2980B9;
+		background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);
+		background: linear-gradient(to left, #81a7f9, #466ec9, var(--color-bg-item2));
+		text-align: center;
+		position: relative;
+		z-index: 100;
+		/* background-color: #c38787; */
+	}
+	
+	.content__tagline {
+		color: #ffffff;
+		margin: 0 0 0 0;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-top: 1rem;
+		margin-right: 0px;
+		margin-top: 0rem;
+		margin-right: 0px;
+		margin-top: 1rem;
+		font-weight: 100;
+		font-size: 1rem!important;
+		letter-spacing: 0rem;
+		word-spacing: 0rem;
+		text-transform: capitalize;
+		z-index: 199;
+		margin-right: 0%;
+		font-family: "roboto";
+	}
+	
+	
+	
+	
+	.github {
+		width: 100%!important;
+		display: block;
+		margin: 0rem 4px 21px -28px!important;
+		animation: none;
+		font-size: 0.8em!important;
+	}
+
+	.background {
+		background-size: 55%;
+		background-image: url(img/1.jpg);
+		background-position: 74% 74%;
+		background-repeat: no-repeat;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 184px!important;
+		left: -15px!important;
+		background-image: url(../img/1.jpg);
+		background-position: 90% 80%;
+		background-size: 84%!important;
+		z-index: -99;
+		background-repeat: no-repeat;
+		background-color: transparent;
+	}
+
+
+	.menu__item-inner {
+		overflow: hidden;
+		transform: translate3d(100%,0,0);
+		height: 100%;
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: "roboto";
+	}
+
+
+
+
+
+
+}
+
+
+
+
 @media screen and (max-width: 847px) {
+
+	.codrops-header {
+		margin-top: -72px;
+		width: 19%;
+		position: relative;
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+		align-self: start;
+	}
+
+	.action--menu {
+		pointer-events: auto;
+		position: absolute;
+		top: 3.5rem;
+		right: 1.5rem;
+		z-index: 1000;
+	}
+	.github {
+		width: 100%!important;
+		display: block;
+		margin: 0rem 0px 21px -42px;
+		animation: none;
+	}
+	
 
 
 	.content {
@@ -737,24 +881,22 @@ svg:not(:root) {
 		font-size: 1.3rem;
 		letter-spacing: 0rem;
 		word-spacing: 0rem;
-		text-transform: lowercase;
+		text-transform: capitalize;
 		z-index: 199;
 		margin-right: 0%;
 		font-family: "roboto";
 	
 	}
 	.content__title {
-
 		font-family: kon-tiki-aloha-jf, sans-serif;
-		font-size: 13vw;
+		font-size: 11vw;
 		font-weight: normal;
-		mix-blend-mode: screen;
-		line-height: 0.8;
+		/* mix-blend-mode: screen; */
+		line-height: 1.8;
 		text-transform: lowercase;
-		margin: 0;
-		color: #2c5a9d;
-		z-index: 199;
-	
+		margin: 2px;
+		color: #fafcff;
+		z-index: 9199;
 	}
 
 	
@@ -783,44 +925,34 @@ svg:not(:root) {
 	
 	}
 
-	.background {
-
-		position: fixed;
-		width: 100%;
-		height: 100%;
-		top: 397px;
-		left: 135px;
-		background-image: url(../img/1.jpg);
-		background-position: 90% 80%;
-		background-size: 37%;
-		z-index: 1;
-		background-repeat: no-repeat;
-	background-color: none;
 	
-	}
 
 	.background {
-
+		background-size: 55%;
+		background-image: url(img/1.jpg);
+		background-position: 74% 74%;
+		background-repeat: no-repeat;
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		top: 53px;
+		top: 186px;
 		left: 0;
 		background-image: url(../img/1.jpg);
 		background-position: 90% 80%;
 		background-size: 37%;
-		z-index: 1;
+		z-index: -99;
 		background-repeat: no-repeat;
-		background-color: transparent;
-	
+		background-color: ;
 	}
-	.github {
-		width: 55%;
-		display: block;
-		margin: 1rem 42px 35px 0px;
 	
+	.action--close {
+		position: absolute;
+		top: 2rem;
+		right: 2.4rem;
+		z-index: 1000;
+		opacity: 0;
+		padding: 32px 5px;
 	}
-
 
 
 	
