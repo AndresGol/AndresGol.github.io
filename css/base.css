@@ -64,18 +64,22 @@ body {
 }
 
 .logo {
+
     width: 70%;
     opacity: 1;
     margin-bottom: 0px;
     margin-top: 0px;
-	margin-left: 20px;
-	-webkit-transition: 3s ease-in-out;
+    margin-left: 20px;
+    -webkit-transition: 3s ease-in-out;
     -moz-transition: 3s ease-in-out;
     -o-transition: 3s ease-in-out;
-    /* animation: test 4s 6s 1 ease-in-out  */
+    animation: test 4s 6s 1 ease-in-out;
+    margin-right: 50px!important;
+    width: 140px;
+
 }
 
-/* @-webkit-keyframes test{
+@-webkit-keyframes test{
 	0%   { opacity: 1; transform: scale(1);}
 	100% { opacity: 0; transform: scale(30);}
   }
@@ -91,7 +95,7 @@ body {
 	0%   { opacity: 1;transform: rotate(9220deg) ;}
 	500%   { opacity: 1;}
 	100%   { opacity: 1;}
-  } */
+  }
 
 
 
@@ -122,7 +126,7 @@ body {
 	border-radius: 50%;
 	opacity: 0.4;
 	background: var(--color-link);
-	animation: loaderAnim 0.7s linear infinite alternate forwards;
+	animation: loaderAnim 0.1s linear infinite alternate forwards;
 }
 
 @keyframes loaderAnim {
@@ -608,9 +612,12 @@ img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(../img/2.jpg) no-repeat 50% 50%;
-	background-size: cover;
+	background: url(../img/little_fish3.png) no-repeat 50% 50%;
+	background-size: 90%;
+	background-blend-mode: soft-light;
 	transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
+	background-color: #071422;
+	
 }
 
 .menu__item-inner:hover .menu__item-map {
@@ -681,11 +688,14 @@ b {
 	font-size: 0.95rem;
 }
 
-svg:not(:root) {
-    margin-top: 7px;
-    overflow: hidden;
-    margin-right: 20px;
-}
+
+	svg:not(:root) {
+		margin-top: 7px;
+		overflow: hidden;
+		margin-right: 20px;
+		color: #7dff56;
+	}
+
 
 .vertical {
 	color: #a3a6aa!important;
@@ -709,6 +719,28 @@ svg:not(:root) {
 
 @media screen and (max-width: 425px) {
 
+
+
+	.logo {
+		width: 70%;
+		opacity: 1;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		margin-left: 20px;
+		-webkit-transition: 3s ease-in-out;
+		-moz-transition: 3s ease-in-out;
+		-o-transition: 3s ease-in-out;
+		animation: test 4s 6s 1 ease-in-out;
+		margin-right: 10px !important;
+		width: 120px;
+	}
+
+	.frame {
+		position: relative;
+		z-index: 199;
+		height: 148px;
+	}
+
 	.action--menu {
 		pointer-events: auto;
 		position: absolute;
@@ -729,6 +761,7 @@ svg:not(:root) {
 		margin-top: 18px;
 		overflow: hidden;
 		margin-right: 20px;
+		color: #7dff56;
 	}
 	.codrops-header {
 		margin-top: -72px;
@@ -826,6 +859,22 @@ svg:not(:root) {
 
 @media screen and (max-width: 847px) {
 
+	.logo {
+
+		width: 70%;
+		opacity: 1;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		margin-left: 88px;
+		-webkit-transition: 3s ease-in-out;
+		-moz-transition: 3s ease-in-out;
+		-o-transition: 3s ease-in-out;
+		animation: test 4s 6s 1 ease-in-out;
+		margin-right: 50px !important;
+		width: 140px;
+	
+	}
+
 	.codrops-header {
 		margin-top: -72px;
 		width: 19%;
@@ -850,9 +899,18 @@ svg:not(:root) {
 		display: block;
 		margin: 0rem 0px 21px -42px;
 		animation: none;
+		color: #ffffff!important;
 	}
 	
-
+	
+elemento {
+}
+svg:not(:root) {
+    margin-top: -31px;
+    overflow: hidden;
+    margin-right: 20px;
+    color: #7dff56;
+}
 
 	.content {
 /* 
