@@ -424,7 +424,7 @@ img {
     line-height: 0.8;
     text-transform: lowercase;
     margin: 0;
-    color: #2c5a9d;
+    color: #ff380e;
 	z-index: 199;
     margin-left: -12em;
 }
@@ -693,7 +693,7 @@ b {
 		margin-top: 7px;
 		overflow: hidden;
 		margin-right: 20px;
-		color: #7dff56;
+		color: #ffffff;
 	}
 
 
@@ -761,7 +761,7 @@ b {
 		margin-top: 18px;
 		overflow: hidden;
 		margin-right: 20px;
-		color: #7dff56;
+		color: #ffffff;
 	}
 	.codrops-header {
 		margin-top: -72px;
@@ -953,7 +953,7 @@ svg:not(:root) {
 		line-height: 1.8;
 		text-transform: lowercase;
 		margin: 2px;
-		color: #fafcff;
+		color: #ff380e;
 		z-index: 9199;
 	}
 
