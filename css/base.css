@@ -71,7 +71,7 @@ body {
     margin-top: 0px;
     margin-left: 20px;
     margin-right: 50px!important;
-	width: 140px;
+	/* width: 140px; */
 	-webkit-animation: slide-in-elliptic-right-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
 	        animation: slide-in-elliptic-right-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
 
@@ -109,7 +109,7 @@ body {
 	}
   }
   
-
+  
 
 /* Page Loader */
 .js .loading::before {
@@ -193,11 +193,6 @@ img {
     margin-top: -24px;
 
 }
-
-
-
-
-
 
 .frame {
 	position: relative;
@@ -423,12 +418,10 @@ img {
 }
 
 .content__title {
-    /* font-family: "sabbath-black", serif; */
-    /* font-family: 'KoHo', sans-serif; */
-    /* font-family: lieberuth,sans-serif; */
-    font-family: kon-tiki-aloha-jf, sans-serif;
-	font-size: 4vw;
-	/* background-color: rgba(6, 62, 248, 0.5); */
+    font-family: blenny, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 5vw;
     font-weight: normal;
     mix-blend-mode: screen;
     line-height: 0.8;
@@ -480,7 +473,6 @@ img {
 
 
   .content__tagline {
-	  font-weight: 100;
     color: #ffffff;
     /* margin: 0 0 0 0; */
     margin-top: 1rem;
@@ -496,8 +488,10 @@ img {
     text-transform: capitalize;
     /* text-align: left; */
     z-index: 199;
-    margin-right: 45%;
-    font-family: "roboto";
+    margin-right: 50%;
+    font-family: quasimoda-2, sans-serif;
+font-style: normal;
+font-weight: 400;
 }
 .action {
 	background: none;
@@ -699,13 +693,12 @@ b {
 }
 
 
-	svg:not(:root) {
-		margin-top: 7px;
-		overflow: hidden;
-		margin-right: 20px;
-		color: #ffffff;
-	}
-
+svg:not(:root) {
+    margin-top: 33px;
+    overflow: hidden;
+    margin-right: 29px;
+    color: #ffffff;
+  }
 
 .vertical {
 	color: #a3a6aa!important;
@@ -768,11 +761,11 @@ b {
 	}
 
 	svg:not(:root) {
-		margin-top: 18px;
+		margin-top: 33px;
 		overflow: hidden;
-		margin-right: 20px;
+		margin-right: 29px;
 		color: #ffffff;
-	}
+	  }
 	.codrops-header {
 		margin-top: -72px;
 		width: 33%!important;
@@ -812,7 +805,9 @@ b {
 		text-transform: capitalize;
 		z-index: 199;
 		margin-right: 0%;
-		font-family: "roboto";
+		font-family: quasimoda-2, sans-serif;
+font-style: normal;
+font-weight: 400;
 	}
 	
 	
@@ -913,13 +908,12 @@ b {
 	}
 	
 	
-elemento {
-}
+
 svg:not(:root) {
     margin-top: -31px;
     overflow: hidden;
     margin-right: 20px;
-    color: #7dff56;
+    color: #ffffff;
 }
 
 	.content {
@@ -952,11 +946,15 @@ svg:not(:root) {
 		text-transform: capitalize;
 		z-index: 199;
 		margin-right: 0%;
-		font-family: "roboto";
+		font-family: quasimoda-2, sans-serif;
+font-style: normal;
+font-weight: 400;
 	
 	}
 	.content__title {
-		font-family: kon-tiki-aloha-jf, sans-serif;
+		font-family: blenny, sans-serif;
+		font-style: normal;
+		font-weight: 900;
 		font-size: 11vw;
 		font-weight: normal;
 		/* mix-blend-mode: screen; */
