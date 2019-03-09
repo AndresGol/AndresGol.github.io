@@ -83,7 +83,7 @@ body {
 			  transform-origin: 100% 50%;
 	  -webkit-filter: blur(40px);
 			  filter: blur(40px);
-	  opacity: 0;
+	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(0) scaleY(1) scaleX(1);
@@ -103,7 +103,7 @@ body {
 			  transform-origin: 100% 50%;
 	  -webkit-filter: blur(40px);
 			  filter: blur(40px);
-	  opacity: 0;
+	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(0) scaleY(1) scaleX(1);
@@ -712,7 +712,13 @@ svg:not(:root) {
 
 
 
-
+.menu__item-link::after {
+    content: '\27F6';
+    display: block;
+    margin-top: auto;
+    font-size: 0.95rem;
+    padding-top: 0px;
+}
 
 
 
@@ -1211,7 +1217,7 @@ span.sidemenu__item-inner {
 }
 span.sidemenu__item-inner:hover {
 	font-size: 1.5em;
-	color: #EE4B5E;
+	color: rgb(58, 37, 248);
 }
 
 
@@ -1230,7 +1236,7 @@ span.sidemenu__item-inner:hover {
 		font-family: blenny, sans-serif;
 	}
 	.mainmenu__item:hover {
-		color: var(--color-item-alt);
+		color: #4080bb;
 	}
 	.mainmenu__item::before {
 		counter-increment: menuitem;
