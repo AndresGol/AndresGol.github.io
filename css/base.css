@@ -38,17 +38,17 @@ body {
 	--color-text: #fff;
 	--color-bg: #252525;
 	--color-link: #fff;
-	--color-link-hover: #49789e;
+	--color-link-hover: #025091;
 	--color-bg-item1: #15171b;
 	--color-bg-item2: #2c35b7;
 	--color-bg-item3: #0f1013;
 	--color-bg-item4: #1d2027;
 	--color-bg-item5: #0f1013;
-	--color-item-alt: #f25260;
+	--color-item-alt: #ff6b6b;
 	--color-quote: #a3a6aa;
 	--color-info: #57535a;
 	--color-title: #4f85fa;
-	--color-tagline: #494d86;
+	--color-tagline: #101edf;
 	/* font-family: "europa", Futura, Arial, sans-serif; */
 	/* font-family: 'KoHo', sans-serif; */
 	font-family: lieberuth,sans-serif;
@@ -429,11 +429,10 @@ img {
 	font-weight: 900;
 	font-size: 5vw;
     font-weight: normal;
-    mix-blend-mode: screen;
     line-height: 0.8;
     text-transform: lowercase;
     margin: 0;
-    color: #ff380e;
+    color: #ff6b6b;
 	z-index: 199;
     margin-left: -12em;
 }
@@ -495,9 +494,9 @@ img {
     /* text-align: left; */
     z-index: 199;
     margin-right: 50%;
-    font-family: quasimoda-2, sans-serif;
-font-style: normal;
-font-weight: 400;
+    font-family: dinosaur, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 .action {
 	background: none;
@@ -653,7 +652,7 @@ font-weight: 400;
     text-align: center;
     max-width: 80%;
     color: var(--color-quote);
-	font-family: "europa", Futura, Arial, sans-serif;
+	font-family: dinosaur, sans-serif;
 	background-image: linear-gradient(#021830, #0c1218);
 	background-size: auto 200%;
 	background-position: 0 100%;
@@ -667,12 +666,12 @@ font-weight: 400;
 
 
 b {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-left: 0rem;
     text-align: center;
     max-width: 74%;
-	color: #fcfcfc;
-	font-family: "europa", Futura, Arial, sans-serif; 
+	color: #a3a6aa;
+	font-family: dinosaur, sans-serif;
 	font-weight: 100;
 }
 
@@ -688,7 +687,7 @@ b {
 	display: flex;
 	flex-direction: column;
 	height: calc(100% - 3rem);
-	font-family: "europa", Futura, Arial, sans-serif; 
+	font-family: dinosaur, sans-serif;
 }
 
 .menu__item-link::after {
@@ -811,7 +810,7 @@ svg:not(:root) {
 		text-transform: capitalize;
 		z-index: 199;
 		margin-right: 0%;
-		font-family: quasimoda-2, sans-serif;
+		font-family: dinosaur, sans-serif;
 font-style: normal;
 font-weight: 400;
 	}
@@ -855,7 +854,7 @@ font-weight: 400;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		font-family: "roboto";
+		font-family: dinosaur, sans-serif;
 	}
 
 
@@ -952,7 +951,7 @@ svg:not(:root) {
 		text-transform: capitalize;
 		z-index: 199;
 		margin-right: 0%;
-		font-family: quasimoda-2, sans-serif;
+		font-family: dinosaur, sans-serif;
 font-style: normal;
 font-weight: 400;
 	
@@ -967,7 +966,7 @@ font-weight: 400;
 		line-height: 1.8;
 		text-transform: lowercase;
 		margin: 2px;
-		color: #ff380e;
+		color: #ff6b6b;
 		z-index: 9199;
 	}
 
@@ -979,7 +978,7 @@ font-weight: 400;
 		text-align: center;
 		max-width: 79%;
 		color: #fcfcfc;
-		font-family: "europa", Futura, Arial, sans-serif;
+		font-family: dinosaur, sans-serif;
 		font-weight: 100;
 	
 	}
@@ -993,7 +992,7 @@ font-weight: 400;
 		justify-self: end;
 		text-align: center;
 		color: white;
-		font-family: "europa", Futura, Arial, sans-serif !important;
+		font-family: dinosaur, sans-serif;
 	
 	}
 
@@ -1076,36 +1075,7 @@ font-weight: 400;
 		min-height: 100vh;
 		text-align: left;
 	}
-	/* .content__tagline {
-
-		color: #dd0707;
-		margin: 0 0 0 0;
-		margin-top: 1rem;
-		background-color: rgba(0, 1, 7, 0.5);
-		margin-right: 0px;
-		margin-top: 0rem;
-		margin-right: 0px;
-		margin-top: 1rem;
-		font-weight: 100;
-		font-size: 1rem;
-		letter-spacing: 0rem;
-		word-spacing: 0rem;
-		text-transform: lowercase;
-		text-align: left;
-		z-index: 199;
-		margin-right: 26em;
-		font-family: "europa", Futura, Arial, sans-serif;
 	
-	} */
-
-
-
-
-
-
-
-
-
 
 
 	.frame {
@@ -1145,7 +1115,7 @@ font-weight: 400;
 	.info {
 		margin: 0 6rem 0 0;
 		color: var(--color-info);
-		font-family: lieberuth,sans-serif; 
+		font-family: dinosaur, sans-serif;
 	}
 	.menu {
 		width: 100%;
@@ -1232,11 +1202,24 @@ font-weight: 400;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		font-family: dinosaur, sans-serif;
 	}
+
+span.sidemenu__item-inner {
+	font-size: 1.5em;
+	color: #a3a6aa;
+}
+span.sidemenu__item-inner:hover {
+	font-size: 1.5em;
+	color: #ff6b6b;
+}
+
+
 	.mainmenu {
 		counter-reset: menuitem;
 	}
 	.mainmenu__item {
+		color: #a3a6aa;
 		font-size: 3vw;
 		text-transform: lowercase;
 		overflow: visible;
@@ -1244,7 +1227,7 @@ font-weight: 400;
 		padding: 0 0.5rem;
 		position: relative;
 		transition: color 0.3s;
-		font-family: kon-tiki-aloha-jf, sans-serif;
+		font-family: blenny, sans-serif;
 	}
 	.mainmenu__item:hover {
 		color: var(--color-item-alt);
@@ -1276,7 +1259,7 @@ font-weight: 400;
 		transform: scale3d(1,1,1);
 	}
 	.sidemenu__item {
-		text-transform: uppercase;
+		text-transform: capitalize;
 		letter-spacing: 0.15rem;
 		font-size: 0.85rem;
 	}
