@@ -44,7 +44,7 @@ body {
 	--color-bg-item3: #0f1013;
 	--color-bg-item4: #1d2027;
 	--color-bg-item5: #0f1013;
-	--color-item-alt: #ff6b6b;
+	--color-item-alt: #EE4B5E;
 	--color-quote: #a3a6aa;
 	--color-info: #57535a;
 	--color-title: #4f85fa;
@@ -432,7 +432,7 @@ img {
     line-height: 0.8;
     text-transform: lowercase;
     margin: 0;
-    color: #ff6b6b;
+    color: #EE4B5E;
 	z-index: 199;
     margin-left: -12em;
 }
@@ -966,7 +966,7 @@ font-weight: 400;
 		line-height: 1.8;
 		text-transform: lowercase;
 		margin: 2px;
-		color: #ff6b6b;
+		color: #EE4B5E;
 		z-index: 9199;
 	}
 
@@ -1211,7 +1211,7 @@ span.sidemenu__item-inner {
 }
 span.sidemenu__item-inner:hover {
 	font-size: 1.5em;
-	color: #ff6b6b;
+	color: #EE4B5E;
 }
 
 
