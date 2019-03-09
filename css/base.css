@@ -38,7 +38,7 @@ body {
 	--color-text: #fff;
 	--color-bg: #252525;
 	--color-link: #fff;
-	--color-link-hover: #025091;
+	--color-link-hover: rgb(58, 37, 248);
 	--color-bg-item1: #15171b;
 	--color-bg-item2: #2c35b7;
 	--color-bg-item3: #0f1013;
@@ -1413,7 +1413,7 @@ span.sidemenu__item-inner:hover {
 		font-family: blenny, sans-serif;
 	}
 	.mainmenu__item:hover {
-		color: #4080bb;
+		color: rgb(58, 37, 248);
 	}
 	.mainmenu__item::before {
 		counter-increment: menuitem;
@@ -1427,12 +1427,12 @@ span.sidemenu__item-inner:hover {
 	.mainmenu__item::after {
 		content: '';
 		width: 100%;
-		top: 58%;
+		top: 82%;
 		height: 6px;
-		background: var(--color-link-hover);
+		background: #EE4B5E;
 		position: absolute;
 		left: 0;
-		opacity: 0;
+		opacity: 0.3;
 		transform: scale3d(0,1,1);
 		transition: transform 0.3s, opacity 0.3s;
 		transform-origin: 100% 50%;
