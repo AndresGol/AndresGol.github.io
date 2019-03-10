@@ -924,6 +924,7 @@ svg:not(:root) {
 		-webkit-transition: 3s ease-in-out;
 		-moz-transition: 3s ease-in-out;
 		-o-transition: 3s ease-in-out;
+		transition: 3s ease-in-out;
 		animation: test 4s 6s 1 ease-in-out;
 		margin-right: 10px !important;
 		width: 120px;
@@ -1065,6 +1066,7 @@ font-weight: 400;
 		-webkit-transition: 3s ease-in-out;
 		-moz-transition: 3s ease-in-out;
 		-o-transition: 3s ease-in-out;
+		transition: 3s ease-in-out;
 		animation: test 4s 6s 1 ease-in-out;
 		margin-right: 50px !important;
 		width: 140px;
@@ -1199,7 +1201,6 @@ font-weight: 400;
 		background-size: 37%;
 		z-index: -99;
 		background-repeat: no-repeat;
-		background-color: ;
 	}
 	
 	.action--close {
