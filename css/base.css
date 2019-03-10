@@ -38,7 +38,7 @@ body {
 	--color-text: #fff;
 	--color-bg: #252525;
 	--color-link: #fff;
-	--color-link-hover:rgb(36, 63, 88) ;
+	--color-link-hover:#0ebeff ;
 	--color-bg-item1: #15171b;
 	--color-bg-item2: #2c35b7;
 	--color-bg-item3: #0f1013;
@@ -115,38 +115,36 @@ body {
 	  opacity: 1;
 	}
   }
-  
   img.logo2 {
     width: 20%;
     margin-bottom: 0px;
     margin-top: 0px;
-    margin-left: 0px;
-	margin-right: 0px!important;
-	z-index: 9999;
-	opacity: 0.7;
+    margin-left: 50%;
+    margin-right: 0px!important;
+    z-index: 9999;
+    opacity: 0.7;
     /* width: 140px; */
-   
- 
-	animation: animationFrames ease-in-out 12s;
-	animation-iteration-count: infinite;
-	transform-origin: 50% 50%;
-	-webkit-animation: animationFrames ease-in-out 12s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-transform-origin: 50% 50%;
-	-moz-animation: animationFrames ease-in-out 12s;
-	-moz-animation-iteration-count: infinite;
-	-moz-transform-origin: 50% 50%;
-	-o-animation: animationFrames ease-in-out 12s;
-	-o-animation-iteration-count: infinite;
-	-o-transform-origin: 50% 50%;
-	-ms-animation: animationFrames ease-in-out 12s;
-	-ms-animation-iteration-count: infinite;
-	-ms-transform-origin: 50% 50%;
+    animation: animationFrames ease-in-out 12s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: animationFrames ease-in-out 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: animationFrames ease-in-out 12s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: animationFrames ease-in-out 12s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: animationFrames ease-in-out 12s;
+    -ms-animation-iteration-count: infinite;
+		-ms-transform-origin: 50% 50%;
+	
 }
 
 @keyframes animationFrames{
 	0% {
-	  transform:  translate(-457px,122px)  ;
+	  transform:  translate(-1457px,122px)  ;
 	}
 	4% {
 	  transform:  translate(-275px,117px)  ;
@@ -161,19 +159,22 @@ body {
 	  transform:  translate(-80px,25px)  ;
 	}
 	49% {
-	  transform:  translate(28px,-6px)  ;
+	  transform:  translate(-150px,-6px)  ;
 	}
 	83% {
-	  transform:  translate(222px,-129px)  ;
+	  transform:  translate(222px,129px)  ;
 	}
 	93% {
-	  transform:  translate(207px,-202px)  ;
+	  transform:  translate(-207px,202px)  ;
 	}
 	100% {
-	  transform:  translate(492px,-189px)  ;
+	  transform:  translate(1492px,189px)  ;
 	}
-  }
-  
+	}
+	/* copy the animation below for others browsers than chrome. */
+
+
+/*   
   @-moz-keyframes animationFrames{
 	0% {
 	  -moz-transform:  translate(-457px,122px)  ;
@@ -206,13 +207,13 @@ body {
   
   @-webkit-keyframes animationFrames {
 	0% {
-	  -webkit-transform:  translate(-457px,122px)  ;
+	  -webkit-transform:  translate(-957px,-922px)  ;
 	}
 	4% {
-	  -webkit-transform:  translate(-275px,117px)  ;
+	  -webkit-transform:  translate(-275px,-117px)  ;
 	}
 	11% {
-	  -webkit-transform:  translate(-189px,107px)  ;
+	  -webkit-transform:  translate(-489px,107px)  ;
 	}
 	22% {
 	  -webkit-transform:  translate(-172px,52px)  ;
@@ -227,10 +228,10 @@ body {
 	  -webkit-transform:  translate(222px,-129px)  ;
 	}
 	93% {
-	  -webkit-transform:  translate(207px,-202px)  ;
+	  -webkit-transform:  translate(-207px,-202px)  ;
 	}
 	100% {
-	  -webkit-transform:  translate(492px,-189px)  ;
+	  -webkit-transform:  translate(1492px,-189px)  ;
 	}
   }
   
@@ -292,7 +293,7 @@ body {
 	100% {
 	  -ms-transform:  translate(492px,-189px)  ;
 	}
-  }
+  } */
 
 
 /* Page Loader */
@@ -1395,7 +1396,7 @@ span.sidemenu__item-inner {
 }
 span.sidemenu__item-inner:hover {
 	font-size: 1.5em;
-	color: rgb(36, 63, 88);
+	color: #0ebeff;
 }
 
 
@@ -1414,7 +1415,7 @@ span.sidemenu__item-inner:hover {
 		font-family: blenny, sans-serif;
 	}
 	.mainmenu__item:hover {
-		color: rgb(36, 63, 88);
+		color: #0ebeff;
 	}
 	.mainmenu__item::before {
 		counter-increment: menuitem;
@@ -1429,7 +1430,7 @@ span.sidemenu__item-inner:hover {
 		content: '';
 		width: 100%;
 		top: 82%;
-		height: 6px;
+		height: 1px;
 		background: #EE4B5E;
 		position: absolute;
 		left: 0;
