@@ -38,7 +38,7 @@ body {
 	--color-text: #fff;
 	--color-bg: #252525;
 	--color-link: #fff;
-	--color-link-hover: rgb(58, 37, 248);
+	--color-link-hover:rgb(36, 63, 88) ;
 	--color-bg-item1: #15171b;
 	--color-bg-item2: #2c35b7;
 	--color-bg-item3: #0f1013;
@@ -123,6 +123,7 @@ body {
     margin-left: 0px;
 	margin-right: 0px!important;
 	z-index: 9999;
+	opacity: 0.7;
     /* width: 140px; */
    
  
@@ -1394,7 +1395,7 @@ span.sidemenu__item-inner {
 }
 span.sidemenu__item-inner:hover {
 	font-size: 1.5em;
-	color: rgb(58, 37, 248);
+	color: rgb(36, 63, 88);
 }
 
 
@@ -1413,7 +1414,7 @@ span.sidemenu__item-inner:hover {
 		font-family: blenny, sans-serif;
 	}
 	.mainmenu__item:hover {
-		color: rgb(58, 37, 248);
+		color: rgb(36, 63, 88);
 	}
 	.mainmenu__item::before {
 		counter-increment: menuitem;
