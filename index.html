@@ -13,7 +13,9 @@
   <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script> 
+  <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script>
 
 
   
@@ -31,17 +33,20 @@
         <li><a href="">Contact</a></li>
       </nav>
     </header>
-    <section class="gradientloop hero">
+    <section id="vantajs" class="gradientloop hero">
+
+        <!-- <div id="vantajs"></div> -->
       
-      <div class="background-image"  style="background-image: url(..images/../images/peixes-fluo.png) ;"></div>
-      
+      <!-- <div class="background-image"  ;"></div> -->
+      <!-- style="background-image: url(..images/../images/peixes-fluo.png)  -->
+
       <div class="hero-content-area" >
           
-        <h1>Internet is awesome</h1>
-        <!-- <h3>is</h3> -->
-        <!-- <a class="btn" href="#">btn</a> -->
+        <h1>Hi I'm Andrés</h1>
+        <h3>UI design UX research & testing</h3>
+        <a class="btn" href="#">btn</a>
       </div>
-      <!-- <h1 class="linear-wipe">AWESOME</h1> -->
+       <!-- <h1 class="linear-wipe">prototyping</h1> -->
       
     </section>
     
@@ -57,8 +62,14 @@
       </ul>
     </footer>
   
- 
-
+    
+    <script>
+        VANTA.WAVES({
+          el: "#vantajs",
+          color: 0xa0f11,
+          zoom: 0.50
+        })
+        </script>
 </body>
 
 </html>
