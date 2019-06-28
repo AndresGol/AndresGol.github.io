@@ -28,7 +28,9 @@ font-family: 'Playfair Display', serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Anton', sans-serif; */
 
-
+img {
+  position: absolute;
+}
 
 a.button3{
   display:inline-block;
@@ -101,6 +103,8 @@ html {
 
 nav, ul {
   list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+  
 }
 
 a {
@@ -139,9 +143,9 @@ h1 { font-size: 20vw;
 
 
 .linear-wipe {
-  font-size: 6em;
+  font-size: 1.2em;
   text-align: center;
-  background: linear-gradient(to right, #ef8933 20%, #e84990 40%, #76f9fb 60%, #e84990 80%);
+  background: linear-gradient(to right, #afafaf 20%, #d3d2d2 40%, #cfa3a3 60%, #fa3a53 80%,rgb(187, 186, 186) 90%);
   background-size: 200% auto;
   margin-top: 10px;
   color: #000;
@@ -152,7 +156,8 @@ h1 { font-size: 20vw;
   
   
   animation: shine 0.05s linear infinite; */
-  animation: animate 55s linear infinite;
+  line-height: 60px;
+  animation: animate 15s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   
@@ -164,10 +169,10 @@ h1 { font-size: 20vw;
 
 @keyframes animate {
   0% {
-    background-position: -500%;
+    background-position: 500%;
   }
   100% {
-    background-position: 500%;
+    background-position: -500%;
   }
 }
 
@@ -536,7 +541,7 @@ footer ul li {
 
 h2,
 .ms-WPBody h2 {
-  margin-top: 30px;
+  margin-left: 101px;
   color: #000;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -595,27 +600,27 @@ section {
 }
 
 #boxTwo {
-  background-image: url(../images/humaaans.png);
+  /* background-image: url(../images/humaaans.png); */
 }
 
 #boxSeven {
-  background-image: url(../images/kiki_fond_degrade.png);
+  /* background-image: url(../images/kiki_fond_degrade.png); */
 }
 
 #boxThree {
-  background-image:url(../images/flor2-fluo.png);
+  /* background-image:url(../images/flor2-fluo.png); */
 }
 
 #boxSix {
-  background-image: url(../images/flor2-fluo.png);
-}
+  /* background-image: url(../images/flor2-fluo.png);*/
+} 
 
 #boxFour {
-  background-image: url(../images/flor-fluo.png);
+  /* background-image: url(../images/flor-fluo.png); */
 }
 
 #boxFive {
-  background-image: url(../images/peixes-fluo.png);
+  /* background-image: url(../images/peixes-fluo.png); */
 }
 
 .full {
@@ -813,3 +818,149 @@ section {
   width: 100%;
   height: 100%;
   margin-bottom: 0px; }
+
+
+
+
+
+.button {
+  touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  border: .1em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #FFF;
+  margin-top: 40px;
+  font-size: 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.button__text {
+  display: block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button__text:before {
+  content: attr(title);
+}
+.button__text--bis {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateX(-1em);
+          transform: translateX(-1em);
+  opacity: 0;
+}
+.button__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  -webkit-transform: translateX(-100%) rotate(45deg);
+          transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  opacity: 1;
+}
+.button:hover .button__text {
+  -webkit-animation: fx-text .3s ease-out;
+          animation: fx-text .3s ease-out;
+}
+.button:hover .button__text--bis {
+  -webkit-animation: fx-text-bis .3s ease-out;
+          animation: fx-text-bis .3s ease-out;
+}
+.button:hover .button__mask {
+  -webkit-animation: fx-mask .3s ease-out;
+          animation: fx-mask .3s ease-out;
+}
+
+.button:active {
+  opacity: 1;
+  background: white;
+  color: inherit;
+}
+
+@-webkit-keyframes fx-mask {
+  0% {
+    -webkit-transform: translateX(-100%) rotate(45deg);
+            transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translateX(100%) rotate(45deg);
+            transform: translateX(100%) rotate(45deg);
+  }
+}
+
+@keyframes fx-mask {
+  0% {
+    -webkit-transform: translateX(-100%) rotate(45deg);
+            transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translateX(100%) rotate(45deg);
+            transform: translateX(100%) rotate(45deg);
+  }
+}
+@-webkit-keyframes fx-text {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1em);
+            transform: translateX(1em);
+    opacity: 0;
+  }
+}
+@keyframes fx-text {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1em);
+            transform: translateX(1em);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fx-text-bis {
+  0% {
+    -webkit-transform: translateX(-1em);
+            transform: translateX(-1em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fx-text-bis {
+  0% {
+    -webkit-transform: translateX(-1em);
+            transform: translateX(-1em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
