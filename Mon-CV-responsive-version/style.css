@@ -1,0 +1,298 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    
+  }
+  .responsive {
+    
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+.btn-cv {
+  margin: 0 auto;
+  background-color:none;
+  font-family: 'josefin', sans-serif;
+}
+
+button p {
+  font-size: 2em;
+}
+
+
+
+form {
+  /* position: absolute; */
+  text-align: center;
+  margin-top: 40px;
+  font-size:1em;
+  transform: translate(0%,0%);
+  
+}
+
+  .button { background: #8a8a8a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #201616, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1f1616, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0.3em; 
+    padding-bottom: 0.5em;
+    font-size: 0.6em;
+    margin: 0 auto;
+    user-select: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0.6;
+    color: #ffffff;
+    border: 0.5px white solid;
+    font-family: 'josefin', sans-serif!important;
+}
+  .button__text {
+    display: block;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+  .button__text:before {
+    content: attr(title);
+}
+  .button__text--bis {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-1);
+    opacity: 0;
+}
+  .button__mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+}
+  .button:hover {
+    opacity: 1;
+}
+  .button:hover .button__text {
+    animation: fx-text 0.3s ease-out;
+}
+  .button:hover .button__text--bis {
+    animation: fx-text-bis 0.3s ease-out;
+}
+  .button:hover .button__mask {
+    animation: fx-mask 0.3s ease-out;
+}
+  .button:active {
+    opacity: 1;
+    background: white;
+    color: inherit;
+}
+
+  hr {
+    /* background-image: linear-gradient( to bottom left,
+    #63211b 0,
+      #110605 51%,
+      #130605 65%,
+      #63211b 80% ); */
+    border: 0;
+    height: 1px;
+    width: 100%;
+    margin-left: 0%;
+    border-radius: 100px;
+    /* margin-top: 100px; */
+}
+  
+  body {
+    
+    margin: 40px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #3b3b3b, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #414040, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+  header h1 {
+    font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif!important;
+  }
+  
+  h1 {
+    margin: 0 0 0em 0;
+    font-weight: 100;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans', sans-serif!important;
+  }
+
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 0 0em 0;
+    font-weight: 200;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    
+  }
+  h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 0 0em 0;
+    font-weight: 100;
+    font-size: 0.9em;
+    color: rgb(158, 158, 158);
+    letter-spacing: 1px;
+  }
+  
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: rgb(197, 194, 194);
+  }
+  span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+  }
+
+  a{
+      color: rgb(97, 97, 97);
+      text-decoration: none;
+    }
+  a:hover{
+      color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .fa p {
+      letter-spacing: 0px;
+      
+    }
+
+    .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 16px !important;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color:rgb(97, 97, 97)
+  }
+
+ 
+
+
+
+    .sidebar p {
+        margin: 3px;
+    font-size: 1em;
+    margin-top: 7px;
+    text-align: center;
+
+
+    }
+  .wrapper {
+    max-width: 940px;
+    margin: 0 0px;
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  footer p {
+    font-size: 0.6em;
+    text-align: center;
+    color: #fff;
+  }
+  
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+
+  }
+
+  .photo-plus-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+
+  @media screen and (min-width: 950px) {
+
+
+    .fa {
+      margin-top: 17px;
+      display: inline-block;
+      font: normal normal normal 12px/1 FontAwesome;
+      /* font-size: inherit; */
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-left: 18px;
+      text-align: center;
+      
+  }
+    a{
+      color: #ffffff;
+    }
+    /* no grid support? */
+    .sidebar {
+      float: left;
+      width: 19.1489%;
+    }
+  
+    .content {
+      float: right;
+      width: 79.7872%;
+    }
+  
+    .wrapper {
+      width: 108%;
+      margin: 0px 0px;
+      margin: 0 auto;
+      grid-template-columns: 1fr 3fr;
+    }
+    
+    .header, .footer {
+      grid-column: 1 / -1;
+      /* needed for the floated layout */
+      clear: both;
+      background-image: url(images/texture_1.png) ;
+      background-blend-mode: soft-light;
+    }
+  
+  }
+  
+  .wrapper > * {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+  
+  /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+  @supports (display: grid) {
+    .wrapper > * {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+
+
+  
