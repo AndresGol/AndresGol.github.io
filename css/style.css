@@ -115,7 +115,9 @@ a {
   color: #ffffff;
 }
 a:hover {
-  opacity: 0.8;
+  opacity: 1;
+  color: #e9495d;
+  
 }
 
 a.btn {
